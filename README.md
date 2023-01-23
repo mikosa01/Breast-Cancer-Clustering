@@ -7,7 +7,7 @@ In order to know the accuracy of my model, the following metrics were used:
 1) Normalized Mutual Information (NIM): It scales its results between 0 and 1. This function is normalized by generalizing the mean of the true label and predicted label which is defined by the average method. 
 2) Rand index adjusted: It calculates a similarity measure across two clustering by taking into account all sample combinations and counting pairings allocated to the same or different clusters in the anticipated and true clustering.
 
-#Graph Base Clustering
+# Graph Base Clustering
 
 
 Graph-based clustering is a sort of clustering approach that converts data into a graphical representation in which the vertices of the data are the clustering of the data points and the weighting of the edges based on the similarity of the vertices. It includes clustering techniques such as Chameleon algorithms, Spectral algorithms, Minimum Spanning Tree algorithms, and many more; however, my focus will be on Spectral clustering, which is the algorithm used for this research. As a prelude to discussing the spectral algorithm, I would like to discuss Sparsification, a strategy used by all graph-based algorithms.
@@ -16,7 +16,7 @@ Sparsification is the process of reducing or breaking those connections with a s
 2) Clustering works better. It keeps the connection to the nearest neighbor and also breaks connections to more distant objects. It reduces noise, outliers and sharpens the distinctness between clusters.
 3) Due to the sparsification of such proximity graph, graph partitioning algorithms such as Opossum and Chameleon can be utilized for the clustering step.
 
-#Spectral clustering
+# Spectral clustering
 
 Spectral clustering is a graph theory-based approach for discovering communities of nodes in a network based on the links that connect them. Assuming no assumptions about the cluster shape, it works well with intertwined shapes and utilizes an iterative process to find local minima. The spectrum of the matrices representation  is analysed by spectral graph theory. A spectrum is a set of eigenvectors ranked according to the magnitude of their corresponding eigenvalues. The eigenvalues of the adjacency matrix can be used to draw a graph. The spectrum properties of a graph are related to the graph partitioning challenge. Firstly, we have to create a graph's similarity/adjacency matrix, W and then create a diagonal matrix D.
 
